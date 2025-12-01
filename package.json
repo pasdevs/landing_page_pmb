@@ -1,9 +1,9 @@
 {
-  "name": "mini_quiz",
+  "name": "landing_page_pmb",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pasdevs.github.io/landing_page_pmb",
+  "homepage": "https://pasdevs.github.io/landing_page_pmb/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

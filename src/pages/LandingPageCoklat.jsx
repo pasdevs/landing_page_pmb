@@ -59,14 +59,29 @@ const EarlyBirdLanding = () => {
         {/* HEADER WRAPPER — sticky */}
         <div id="sticky-header" className="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
           {/* TOP INFO BAR */}
-          <div className="bg-emerald-600 text-white text-xs sm:text-sm py-2 px-4 rounded-b-xl shadow">
+          <div className="bg-[#7f6b5d] text-white text-xs sm:text-sm py-2 px-4 rounded-b-xl shadow">
             <div className="flex flex-col gap-1 items-start justify-between sm:flex-row sm:items-center">
               <span>
                 🎉 Program Prioritas (Early Bird) PMB UNPAS – Pendaftaran 3–20 Desember | Daftar ulang 6–30 Desember
               </span>
               <div className="flex items-center gap-3 text-[11px] sm:text-xs">
-                <button className="underline-offset-2 hover:underline cursor-pointer">📞 Call Center PMB</button>
-                <button className="underline-offset-2 hover:underline cursor-pointer">💬 Chat WhatsApp</button>
+                <a
+                  href="https://wa.me/62811960193?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20PMB%20UNPAS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline cursor-pointer"
+                >
+                  📞 Call Center PMB
+                </a>
+
+                <a
+                  href="https://wa.me/62811960193?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20PMB%20UNPAS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline cursor-pointer ml-3"
+                >
+                  💬 Chat WhatsApp
+                </a>
               </div>
             </div>
           </div>
@@ -118,7 +133,7 @@ const EarlyBirdLanding = () => {
               href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:block rounded-full bg-emerald-600 px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow hover:bg-emerald-700 cursor-pointer"
+              className="hidden md:block rounded-full bg-[#7f6b5d] px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow hover:bg-[#6f5e52] cursor-pointer"
             >
               Daftar Sekarang
             </a>
@@ -138,7 +153,7 @@ const EarlyBirdLanding = () => {
                 href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 rounded-full bg-emerald-600 px-4 py-2 text-sm text-center font-semibold text-white shadow hover:bg-emerald-700"
+                className="mt-2 rounded-full bg-[#7f6b5d] px-4 py-2 text-sm text-center font-semibold text-white shadow hover:bg-[#6f5e52]"
               >
                 Daftar Sekarang
               </a>
@@ -150,7 +165,7 @@ const EarlyBirdLanding = () => {
         <section className="mt-4 grid gap-10 md:grid-cols-2 md:items-center">
           {/* HERO LEFT */}
           <div className="space-y-6">
-            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-md font-medium text-emerald-700">
               <span className="h-2 w-2 rounded-full bg-emerald-500" />
               PROGRAM PRIORITAS (EARLY BIRD) PMB 2026
             </div>
@@ -158,7 +173,7 @@ const EarlyBirdLanding = () => {
             <div className="space-y-3">
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
                 Daftar Lebih Awal,
-                <span className="block text-emerald-700">Amankan Kursi &amp; Keuntungan Khusus</span>
+                <span className="block text-[#822327]">Amankan Kursi &amp; Keuntungan Khusus</span>
               </h1>
               <p className="text-sm sm:text-base text-slate-600">
                 Pendaftaran Program Prioritas (Early Bird) dibuka{" "}
@@ -189,11 +204,11 @@ const EarlyBirdLanding = () => {
                 href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-emerald-700 cursor-pointer"
+                className="rounded-full bg-[#7f6b5d] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#6f5e52] cursor-pointer"
               >
                 Daftar Sekarang (3–20 Desember)
               </a>
-              <button className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+              <button className="text-xs sm:text-sm text-[#822327] underline-offset-2 hover:underline cursor-pointer">
                 Lihat skema biaya &amp; promo →
               </button>
             </div>
@@ -206,7 +221,7 @@ const EarlyBirdLanding = () => {
           {/* HERO RIGHT */}
           <div className="space-y-4">
             {/* Ilustrasi */}
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-tr from-emerald-700 via-emerald-500 to-emerald-300 p-6 text-white shadow-lg">
+            <div className="relative overflow-hidden rounded-2xl bg-[#7f6b5d] p-6 text-white shadow-lg">
               {/* <div className="absolute right-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
                 ⏰ Ditutup 20 Desember
               </div> */}
@@ -263,7 +278,7 @@ const EarlyBirdLanding = () => {
 
               <div className="mt-4 space-y-2 text-[11px] sm:text-xs">
                 <div className="flex items-start gap-2">
-                  <div className="mt-0.5 h-2 w-2 rounded-full bg-emerald-600" />
+                  <div className="mt-0.5 h-2 w-2 rounded-full bg-[#7f6b5d]" />
                   <div>
                     <div className="font-semibold text-slate-800">3–20 Desember</div>
                     <div className="text-slate-500">Pendaftaran Online Program Prioritas (Early Bird)</div>
@@ -391,7 +406,7 @@ const EarlyBirdLanding = () => {
             <div className="hidden md:flex items-start justify-between gap-6">
               <div className="flex-1">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-600 text-sm font-bold text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#7f6b5d] text-sm font-bold text-white">
                     1
                   </div>
                   <div>
@@ -465,7 +480,7 @@ const EarlyBirdLanding = () => {
               ].map((item, idx) => (
                 <div key={item.step} className="flex gap-3">
                   <div className="flex flex-col items-center">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-xs font-bold text-white">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#7f6b5d] text-xs font-bold text-white">
                       {item.step}
                     </div>
                     {idx < 2 && <div className="mt-1 h-full w-px flex-1 bg-slate-200" />}
@@ -522,7 +537,7 @@ const EarlyBirdLanding = () => {
                 Fokus pada pengembangan teknologi, rekayasa, dan inovasi di berbagai bidang teknik seperti teknik industri, informatika,
                 mesin, lingkungan, dan perencanaan wilayah.
               </p>
-              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+              <button className="mt-3 text-xs font-semibold text-[#822327] underline-offset-2 hover:underline cursor-pointer">
                 Lihat daftar prodi di Fakultas Teknik →
               </button>
             </div>
@@ -533,7 +548,7 @@ const EarlyBirdLanding = () => {
                 Mempelajari manajemen, akuntansi, dan ilmu ekonomi untuk menyiapkan lulusan yang siap berkarier di dunia bisnis,
                 kewirausahaan, dan keuangan.
               </p>
-              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+              <button className="mt-3 text-xs font-semibold text-[#822327] underline-offset-2 hover:underline cursor-pointer">
                 Lihat daftar prodi di FEB →
               </button>
             </div>
@@ -544,7 +559,7 @@ const EarlyBirdLanding = () => {
                 Menjadi pusat kajian hukum yang melahirkan sarjana hukum profesional, kritis, dan berintegritas di bidang hukum publik
                 maupun privat.
               </p>
-              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+              <button className="mt-3 text-xs font-semibold text-[#822327] underline-offset-2 hover:underline cursor-pointer">
                 Lihat daftar prodi di Fakultas Hukum →
               </button>
             </div>
@@ -595,7 +610,7 @@ const EarlyBirdLanding = () => {
           <div className="mt-8 overflow-hidden rounded-2xl bg-white shadow-sm">
             <div className="overflow-x-auto">
               <table className="min-w-full divide-y divide-slate-200 text-xs sm:text-sm">
-                <thead className="bg-emerald-100">
+                <thead className="bg-slate-200">
                   <tr>
                     <th className="px-4 py-3 text-left font-semibold text-slate-700">Jalur / Gelombang</th>
                     <th className="px-4 py-3 text-left font-semibold text-slate-700">Periode</th>
@@ -655,7 +670,7 @@ const EarlyBirdLanding = () => {
               <a
                 href="https://s.id/unpas_pmb_refund"
                 target="_blank"
-                className="inline-flex w-full justify-center items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow hover:bg-emerald-700 transition"
+                className="inline-flex w-full justify-center items-center gap-2 rounded-xl bg-[#7f6b5d] px-5 py-3 text-sm font-semibold text-white shadow hover:bg-[#6f5e52] transition"
               >
                 📄 Unduh Dokumen Persetujuan Ketentuan Pengembalian Biaya Registrasi Camaba Universitas Pasundan 2026-2027
               </a>
@@ -795,7 +810,7 @@ const EarlyBirdLanding = () => {
                   Silakan hubungi Call Center PMB di <span className="font-semibold">0811960193</span> untuk panduan teknis pengajuan.
                   <br />
                   <br />
-                  <a href="https://s.id/unpas_pmb_refund" target="_blank" className="text-emerald-500 font-semibold underline mt-8">Dokumen Persetujuan Ketentuan Refund</a>
+                  <a href="https://s.id/unpas_pmb_refund" target="_blank" className="text-[#822327] font-semibold underline mt-8">Dokumen Persetujuan Ketentuan Refund</a>
                 </p>
               </div>
             </details>
@@ -855,7 +870,7 @@ const EarlyBirdLanding = () => {
                 href="https://wa.me/62811960193?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20PMB%20UNPAS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex justify-center rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-700 cursor-pointer"
+                className="mt-3 inline-flex justify-center rounded-full bg-[#7f6b5d] px-4 py-2 text-xs font-semibold text-white hover:bg-[#6f5e52] cursor-pointer"
               >
                 Buka WhatsApp PMB
               </a>
@@ -873,7 +888,7 @@ const EarlyBirdLanding = () => {
                 href="https://wa.me/62811960193"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex justify-center rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-700 cursor-pointer"
+                className="mt-3 inline-flex justify-center rounded-full bg-[#7f6b5d] px-4 py-2 text-xs font-semibold text-white hover:bg-[#6f5e52] cursor-pointer"
               >
                 Hubungi Sekarang
               </a>
@@ -895,7 +910,7 @@ const EarlyBirdLanding = () => {
                 href="https://www.google.com/maps/place/Universitas+Pasundan/@-6.905366,107.6032335,17z/data=!4m14!1m7!3m6!1s0x2e68e865b85ee0d7:0x5fa28af82d475f8a!2sUniversitas+Pasundan!8m2!3d-6.905366!4d107.6081044!16s%2Fg%2F1218dxl7!3m5!1s0x2e68e865b85ee0d7:0x5fa28af82d475f8a!8m2!3d-6.905366!4d107.6081044!16s%2Fg%2F1218dxl7?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex justify-center rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-700 cursor-pointer"
+                className="mt-3 inline-flex justify-center rounded-full bg-[#7f6b5d] px-4 py-2 text-xs font-semibold text-white hover:bg-[#6f5e52] cursor-pointer"
               >
                 Lihat Lokasi di Maps
               </a>
