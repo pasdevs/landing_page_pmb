@@ -101,11 +101,11 @@ const EarlyBirdLanding = () => {
             </a>
 
             <div className="hidden md:flex items-center gap-6 text-sm">
-              <button className="text-slate-600 hover:text-emerald-700 cursor-pointer" onClick={() => scrollToSection("keunggulan-unpas")}>Keunggulan UNPAS</button>
-              <button className="text-slate-600 hover:text-emerald-700 cursor-pointer" onClick={() => scrollToSection("kenapa-early-bird")}>Kenapa Early Bird</button>
-              <button className="text-slate-600 hover:text-emerald-700 cursor-pointer" onClick={() => scrollToSection("timeline-alur")}>Timeline &amp; Alur</button>
-              <button className="text-slate-600 hover:text-emerald-700 cursor-pointer" onClick={() => scrollToSection("fakultas")}>Fakultas</button>
-              <button className="text-slate-600 hover:text-emerald-700 cursor-pointer" onClick={() => scrollToSection("biaya-promo")}>Biaya &amp; Promo</button>
+              <button className="text-slate-600 hover:text-[#822327] cursor-pointer" onClick={() => scrollToSection("keunggulan-unpas")}>Keunggulan UNPAS</button>
+              <button className="text-slate-600 hover:text-[#822327] cursor-pointer" onClick={() => scrollToSection("kenapa-early-bird")}>Kenapa Early Bird</button>
+              <button className="text-slate-600 hover:text-[#822327] cursor-pointer" onClick={() => scrollToSection("timeline-alur")}>Timeline &amp; Alur</button>
+              <button className="text-slate-600 hover:text-[#822327] cursor-pointer" onClick={() => scrollToSection("fakultas")}>Fakultas</button>
+              <button className="text-slate-600 hover:text-[#822327] cursor-pointer" onClick={() => scrollToSection("biaya-promo")}>Biaya &amp; Promo</button>
             </div>
 
             {/* HAMBURGER MENU (Mobile Only) */}
