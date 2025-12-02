@@ -65,8 +65,18 @@ const EarlyBirdLanding = () => {
                 🎉 Program Prioritas (Early Bird) PMB UNPAS – Pendaftaran 3–20 Desember | Daftar ulang 6–30 Desember
               </span>
               <div className="flex items-center gap-3 text-[11px] sm:text-xs">
-                <button className="underline-offset-2 hover:underline cursor-pointer">📞 Call Center PMB</button>
-                <button className="underline-offset-2 hover:underline cursor-pointer">💬 Chat WhatsApp</button>
+                <a
+                  href="tel:0222021440"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline cursor-pointer">📞 Call Center PMB</a>
+                <a
+                  href="https://wa.me/62811960193?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20PMB%20UNPAS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline cursor-pointer">
+                  💬 Chat WhatsApp
+                </a>
               </div>
             </div>
           </div>
@@ -865,12 +875,12 @@ const EarlyBirdLanding = () => {
               <div className="mb-2 text-2xl">📞</div>
               <h3 className="text-sm font-semibold text-slate-900">Call Center PMB</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Telp: <span className="font-semibold text-slate-800">0811960193</span>
+                Telp: <span className="font-semibold text-slate-800">(022) 2021440</span>
                 <br />
                 Senin–Jumat, 08.00–16.00 WIB
               </p>
               <a
-                href="https://wa.me/62811960193"
+                href="tel:0222021440"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex justify-center rounded-full bg-emerald-600 px-4 py-2 text-xs font-semibold text-white hover:bg-emerald-700 cursor-pointer"
