@@ -1,4 +1,14 @@
 import React, { useEffect, useState } from "react";
+import {
+  Scale,
+  Users,
+  Cog,
+  BarChart3,
+  BookOpen,
+  Palette,
+  Stethoscope,
+  GraduationCap
+} from "lucide-react";
 
 const EarlyBirdLanding = () => {
 
@@ -516,7 +526,7 @@ const EarlyBirdLanding = () => {
         </section>
 
         {/* SECTION: FAKULTAS */}
-        <section className="mt-16" id="fakultas">
+        {/* <section className="mt-16" id="fakultas">
           <div className="space-y-3 text-center">
             <h2 className="text-xl sm:text-2xl font-bold">Pilih Fakultas &amp; Bidang Studi</h2>
             <p className="mx-auto max-w-2xl text-sm sm:text-base text-slate-600">
@@ -525,15 +535,37 @@ const EarlyBirdLanding = () => {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-4">
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="text-sm font-semibold text-slate-900">Fakultas Hukum</h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Menjadi pusat kajian hukum yang melahirkan sarjana hukum profesional, kritis, dan berintegritas di bidang hukum publik
+                maupun privat.
+              </p>
+              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+                Lihat daftar prodi →
+              </button>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="text-sm font-semibold text-slate-900">Fakultas Ilmu Sosial &amp; Ilmu Politik</h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Mempelajari dinamika sosial, kebijakan publik, komunikasi, hubungan antarnegara, dan isu kesejahteraan masyarakat.
+              </p>
+              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+                Lihat daftar prodi →
+              </button>
+            </div>
+
             <div className="rounded-2xl bg-white p-5 shadow-sm">
               <h3 className="text-sm font-semibold text-slate-900">Fakultas Teknik</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Fokus pada pengembangan teknologi, rekayasa, dan inovasi di berbagai bidang teknik seperti teknik industri, informatika,
-                mesin, lingkungan, dan perencanaan wilayah.
+                mesin, lingkungan, dan perencanaan wilayah kota.
               </p>
               <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
-                Lihat daftar prodi di Fakultas Teknik →
+                Lihat daftar prodi →
               </button>
             </div>
 
@@ -544,20 +576,211 @@ const EarlyBirdLanding = () => {
                 kewirausahaan, dan keuangan.
               </p>
               <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
-                Lihat daftar prodi di FEB →
+                Lihat daftar prodi →
               </button>
             </div>
 
             <div className="rounded-2xl bg-white p-5 shadow-sm">
-              <h3 className="text-sm font-semibold text-slate-900">Fakultas Hukum</h3>
+              <h3 className="text-sm font-semibold text-slate-900">Fakultas Keguruan &amp; Ilmu Pendidikan</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Menjadi pusat kajian hukum yang melahirkan sarjana hukum profesional, kritis, dan berintegritas di bidang hukum publik
-                maupun privat.
+                Mengembangkan kompetensi calon pendidik profesional di berbagai bidang ilmu. FKIP UNPAS menyiapkan guru yang berkarakter, kreatif, dan siap meningkatkan kualitas pendidikan.
               </p>
               <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
-                Lihat daftar prodi di Fakultas Hukum →
+                Lihat daftar prodi →
               </button>
             </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="text-sm font-semibold text-slate-900">Fakultas Ilmu Seni &amp; Sastra</h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Berfokus pada seni, desain, musik, fotografi, dan kajian sastra. FISS UNPAS menjadi ruang bagi mahasiswa untuk mengasah kreativitas dan kepekaan estetika.
+              </p>
+              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+                Lihat daftar prodi →
+              </button>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="text-sm font-semibold text-slate-900">Fakultas Kedokteran</h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Menyelenggarakan pendidikan sarjana kedokteran yang menekankan kompetensi klinis, empati, dan pemahaman ilmiah. FK UNPAS menghasilkan calon dokter yang profesional dan berintegritas.
+              </p>
+              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+                Lihat daftar prodi →
+              </button>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="text-sm font-semibold text-slate-900">Program Pascasarjana</h3>
+              <p className="mt-2 text-sm text-slate-600">
+                Menawarkan program magister dan doktoral yang dirancang untuk meningkatkan keahlian profesional, kemampuan riset, dan
+                kompetensi akademik lintas bidang.
+              </p>
+              <button className="mt-3 text-xs font-semibold text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+                Lihat daftar prodi →
+              </button>
+            </div>
+
+          </div>
+        </section> */}
+
+        {/* ========== */}
+        {/* SECTION: FAKULTAS ICONS */}
+        <section className="mt-16" id="fakultas">
+          <div className="space-y-3 text-center">
+            <h2 className="text-xl sm:text-2xl font-bold">Pilih Fakultas & Bidang Studi</h2>
+            <p className="mx-auto max-w-2xl text-sm sm:text-base text-slate-600">
+              UNPAS memiliki berbagai fakultas dengan program studi unggulan. Mulailah dari memilih fakultas yang paling sesuai dengan
+              minat dan rencana kariermu.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+
+            {/* FAKULTAS HUKUM */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#D32F2F' }}
+            >
+              <Scale className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS HUKUM</h3>
+
+              <a
+                href="https://hukum.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-white/90 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* FISIP */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#003366' }}
+            >
+              <Users className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS ILMU SOSIAL & POLITIK</h3>
+
+              <a
+                href="https://fisip.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-white/90 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* TEKNIK */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#FF652F' }}
+            >
+              <Cog className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS TEKNIK</h3>
+
+              <a
+                href="https://teknik.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-white/90 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* FEB */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-black transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#FFEB3B' }}
+            >
+              <BarChart3 className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS EKONOMI & BISNIS</h3>
+
+              <a
+                href="https://feb.unpas.ac.id/main/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-black/70 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* FKIP */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#028A0F' }}
+            >
+              <BookOpen className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS KEGURUAN & ILMU PENDIDIKAN</h3>
+
+              <a
+                href="https://fkip.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-white/90 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* FISS */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#43296C' }}
+            >
+              <Palette className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS ILMU SENI & SASTRA</h3>
+
+              <a
+                href="https://fiss.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-white/90 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* KEDOKTERAN */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#005005' }}
+            >
+              <Stethoscope className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS KEDOKTERAN</h3>
+
+              <a
+                href="https://kedokteran.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-white/90 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
+            {/* PASCASARJANA */}
+            <div
+              className="rounded-2xl p-5 shadow-sm text-center text-black transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
+              style={{ backgroundColor: '#4197CB' }}
+            >
+              <GraduationCap className="mx-auto w-12 h-12" />
+              <h3 className="mt-3 text-sm font-bold tracking-wide">PASCASARJANA</h3>
+
+              <a
+                href="https://pasca.unpas.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-xs text-black/70 hover:underline"
+              >
+                Lihat daftar prodi →
+              </a>
+            </div>
+
           </div>
         </section>
 
