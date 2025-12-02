@@ -359,7 +359,7 @@ const EarlyBirdLanding = () => {
               </div>
               <h3 className="text-sm font-semibold text-slate-900">Amankan Kursi di Fakultas Favorit</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Beberapa fakultas dan prodi cepat penuh. Daftar di periode Early Bird meningkatkan peluangmu masuk ke bidang studi yang
+                Beberapa fakultas dan prodi memiliki persaingan yang ketat dan minat yang tinggi. Daftar di periode Early Bird meningkatkan peluangmu masuk ke bidang studi yang
                 kamu inginkan.
               </p>
             </div>
