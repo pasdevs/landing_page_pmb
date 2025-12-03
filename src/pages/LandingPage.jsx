@@ -10,6 +10,7 @@ import {
   GraduationCap,
   Info
 } from "lucide-react";
+import ScrollToTop from "react-scroll-to-top";
 
 const EarlyBirdLanding = () => {
 
@@ -171,7 +172,7 @@ const EarlyBirdLanding = () => {
 
           {/* NAVBAR */}
           <header className="flex items-center justify-between py-4">
-            <a href="/" className="flex items-center gap-3">
+            <a href="/landing_page_pmb/" className="flex items-center gap-3">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-slate-300" >
                   <img src="/landing_page_pmb/logo_unpas.png" alt="Logo Unpas" className="h-full w-full object-cover" />
@@ -1135,6 +1136,8 @@ const EarlyBirdLanding = () => {
           </div>
         </div>
       </footer>
+
+      <ScrollToTop smooth style={{ display: "flex", justifyContent: "center", alignItems: "center" }} />
     </div>
   );
 }
