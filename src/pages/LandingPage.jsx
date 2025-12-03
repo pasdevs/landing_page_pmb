@@ -7,12 +7,90 @@ import {
   BookOpen,
   Palette,
   Stethoscope,
-  GraduationCap
+  GraduationCap,
+  Info
 } from "lucide-react";
 
 const EarlyBirdLanding = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const [openInfo, setOpenInfo] = useState(null);
+
+  const fakultasList = [
+    {
+      id: 1,
+      title: "FAKULTAS HUKUM",
+      color: "#D32F2F",
+      textColor: "white",
+      icon: <Scale className="mx-auto w-12 h-12" />,
+      link: "https://hukum.unpas.ac.id/",
+      text: "Menjadi pusat kajian hukum dengan lulusan profesional dan berintegritas di bidang hukum publik maupun privat."
+    },
+    {
+      id: 2,
+      title: "FAKULTAS ILMU SOSIAL & POLITIK",
+      color: "#003366",
+      textColor: "white",
+      icon: <Users className="mx-auto w-12 h-12" />,
+      link: "https://fisip.unpas.ac.id/",
+      text: "Mempelajari dinamika sosial, kebijakan publik, komunikasi, dan isu kesejahteraan masyarakat."
+    },
+    {
+      id: 3,
+      title: "FAKULTAS TEKNIK",
+      color: "#FF652F",
+      textColor: "white",
+      icon: <Cog className="mx-auto w-12 h-12" />,
+      link: "https://teknik.unpas.ac.id/",
+      text: "Fokus pada inovasi dan rekayasa teknologi untuk berbagai kebutuhan industri modern."
+    },
+    {
+      id: 4,
+      title: "FAKULTAS EKONOMI & BISNIS",
+      color: "#FFEB3B",
+      textColor: "black",
+      icon: <BarChart3 className="mx-auto w-12 h-12" />,
+      link: "https://feb.unpas.ac.id/main/",
+      text: "Mempelajari manajemen, akuntansi, bisnis, dan ekonomi untuk membentuk calon profesional kompetitif."
+    },
+    {
+      id: 5,
+      title: "FAKULTAS KEGURUAN & ILMU PENDIDIKAN",
+      color: "#028A0F",
+      textColor: "white",
+      icon: <BookOpen className="mx-auto w-12 h-12" />,
+      link: "https://fkip.unpas.ac.id/",
+      text: "Mengembangkan kompetensi calon pendidik yang kreatif, komunikatif, dan siap memajukan pendidikan."
+    },
+    {
+      id: 6,
+      title: "FAKULTAS ILMU SENI & SASTRA",
+      color: "#43296C",
+      textColor: "white",
+      icon: <Palette className="mx-auto w-12 h-12" />,
+      link: "https://fiss.unpas.ac.id/",
+      text: "Berfokus pada seni, desain, musik, fotografi, dan sastra untuk mengasah kreativitas serta estetika."
+    },
+    {
+      id: 7,
+      title: "FAKULTAS KEDOKTERAN",
+      color: "#005005",
+      textColor: "white",
+      icon: <Stethoscope className="mx-auto w-12 h-12" />,
+      link: "https://kedokteran.unpas.ac.id/",
+      text: "Program pendidikan kedokteran berorientasi pada kompetensi klinis, empati, dan profesionalisme."
+    },
+    {
+      id: 8,
+      title: "PASCASARJANA",
+      color: "#4197CB",
+      textColor: "black",
+      icon: <GraduationCap className="mx-auto w-12 h-12" />,
+      link: "https://pasca.unpas.ac.id/",
+      text: "Program magister & doktoral untuk meningkatkan kompetensi profesional dan kemampuan riset."
+    },
+  ];
 
   const calculateTimeLeft = () => {
     const target = new Date("2025-12-20T23:59:59+07:00").getTime();
@@ -320,25 +398,25 @@ const EarlyBirdLanding = () => {
           </div>
 
           <div className="mt-8 grid gap-5 md:grid-cols-4">
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <h3 className="text-sm font-semibold text-slate-900">Jaringan Alumni Luas</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Alumni tersebar di berbagai sektor industri, pemerintahan, dan wirausaha, menjadi jaringan kuat bagi kariermu.
               </p>
             </div>
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <h3 className="text-sm font-semibold text-slate-900">Banyak Pilihan Beasiswa</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Tersedia beragam skema beasiswa dan jalur prestasi yang dapat membantu meringankan biaya studi.
               </p>
             </div>
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <h3 className="text-sm font-semibold text-slate-900">Lingkungan Religius</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Nilai keislaman dan keindonesiaan menjadi fondasi pembentukan karakter mahasiswa UNPAS.
               </p>
             </div>
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <h3 className="text-sm font-semibold text-slate-900">Adaptif Dunia Kerja</h3>
               <p className="mt-2 text-sm text-slate-600">
                 Kurikulum dan kegiatan kampus dirancang selaras dengan kebutuhan industri dan perkembangan teknologi.
@@ -358,7 +436,7 @@ const EarlyBirdLanding = () => {
           </div>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
                 🎯
               </div>
@@ -369,7 +447,7 @@ const EarlyBirdLanding = () => {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
                 💸
               </div>
@@ -380,7 +458,7 @@ const EarlyBirdLanding = () => {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-white p-5 shadow-sm">
+            <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
                 🧠
               </div>
@@ -630,159 +708,58 @@ const EarlyBirdLanding = () => {
           <div className="space-y-3 text-center">
             <h2 className="text-xl sm:text-2xl font-bold">Pilih Fakultas & Bidang Studi</h2>
             <p className="mx-auto max-w-2xl text-sm sm:text-base text-slate-600">
-              UNPAS memiliki berbagai fakultas dengan program studi unggulan. Mulailah dari memilih fakultas yang paling sesuai dengan
-              minat dan rencana kariermu.
+              UNPAS memiliki berbagai fakultas dengan program studi unggulan. Pilih fakultas yang paling sesuai dengan minatmu.
             </p>
           </div>
 
           <div className="mt-8 grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+            {fakultasList.map((fak) => (
+              <div key={fak.id}>
+                {/* CARD */}
+                <div
+                  className="relative rounded-2xl p-5 shadow-sm text-center transition-all duration-300 hover:shadow-lg flex flex-col justify-between min-h-[180px]"
+                  style={{ backgroundColor: fak.color, color: fak.textColor }}
+                  onMouseEnter={() => setOpenInfo(fak.id)}
+                  onMouseLeave={() => setOpenInfo(null)}
+                >
+                  {/* INFO ICON */}
+                  <button
+                    className="absolute top-2 right-2 bg-white/20 p-1.5 rounded-full hover:bg-white/30 cursor-pointer"
+                    onClick={() => setOpenInfo(openInfo === fak.id ? null : fak.id)}
+                  >
+                    <Info className="w-4 h-4 text-white" style={{ color: fak.textColor }} />
+                  </button>
 
-            {/* FAKULTAS HUKUM */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#D32F2F' }}
-            >
-              <Scale className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS HUKUM</h3>
+                  <div className="flex flex-col items-center">
+                    {fak.icon}
+                    <h3 className="mt-3 text-sm font-bold tracking-wide leading-snug">
+                      {fak.title}
+                    </h3>
+                    <a
+                      href={fak.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-3 text-xs text-white/90 hover:underline"
+                      style={{ color: fak.textColor }}
+                    >
+                      Lihat daftar prodi →
+                    </a>
+                  </div>
 
-              <a
-                href="https://hukum.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-white/90 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
+                  {/* INFO PANEL */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 bg-white/20 rounded-xl mt-3 ${openInfo === fak.id ? "max-h-40 p-3" : "max-h-0 p-0"
+                      }`} style={{ color: fak.textColor }}
+                  >
+                    <p className="text-xs leading-relaxed">{fak.text}</p>
+                  </div>
+                </div>
 
-            {/* FISIP */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#003366' }}
-            >
-              <Users className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS ILMU SOSIAL & POLITIK</h3>
-
-              <a
-                href="https://fisip.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-white/90 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
-            {/* TEKNIK */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#FF652F' }}
-            >
-              <Cog className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS TEKNIK</h3>
-
-              <a
-                href="https://teknik.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-white/90 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
-            {/* FEB */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-black transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#FFEB3B' }}
-            >
-              <BarChart3 className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS EKONOMI & BISNIS</h3>
-
-              <a
-                href="https://feb.unpas.ac.id/main/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-black/70 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
-            {/* FKIP */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#028A0F' }}
-            >
-              <BookOpen className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS KEGURUAN & ILMU PENDIDIKAN</h3>
-
-              <a
-                href="https://fkip.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-white/90 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
-            {/* FISS */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#43296C' }}
-            >
-              <Palette className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS ILMU SENI & SASTRA</h3>
-
-              <a
-                href="https://fiss.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-white/90 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
-            {/* KEDOKTERAN */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-white transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#005005' }}
-            >
-              <Stethoscope className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">FAKULTAS KEDOKTERAN</h3>
-
-              <a
-                href="https://kedokteran.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-white/90 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
-            {/* PASCASARJANA */}
-            <div
-              className="rounded-2xl p-5 shadow-sm text-center text-black transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-              style={{ backgroundColor: '#4197CB' }}
-            >
-              <GraduationCap className="mx-auto w-12 h-12" />
-              <h3 className="mt-3 text-sm font-bold tracking-wide">PASCASARJANA</h3>
-
-              <a
-                href="https://pasca.unpas.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-xs text-black/70 hover:underline"
-              >
-                Lihat daftar prodi →
-              </a>
-            </div>
-
+              </div>
+            ))}
           </div>
         </section>
+
 
         {/* SECTION: BIAYA & SKEMA PROGRAM PRIORITAS */}
         <section className="mt-16" id="biaya-promo">
@@ -873,7 +850,7 @@ const EarlyBirdLanding = () => {
           </div>
 
           {/* BANNER: KETENTUAN REFUND */}
-          <div className="mt-8 rounded-2xl border border-red-200 bg-red-100 p-6 shadow-sm">
+          <div className="mt-8 rounded-2xl border border-red-200 bg-red-100 p-6 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
 
             {/* Text Section */}
             <div className="w-full">
