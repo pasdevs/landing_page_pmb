@@ -172,10 +172,10 @@ const EarlyBirdLanding = () => {
 
           {/* NAVBAR */}
           <header className="flex items-center justify-between py-4">
-            <a href="/landing_page_pmb/" className="flex items-center gap-3">
+            <a href="/" className="flex items-center gap-3">
               <div className="flex items-center gap-3">
                 <div className="h-10 w-10 rounded-full bg-slate-300" >
-                  <img src="/landing_page_pmb/logo_unpas.png" alt="Logo Unpas" className="h-full w-full object-cover" />
+                  <img src="/logo_unpas.png" alt="Logo Unpas" className="h-full w-full object-cover" />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm font-semibold tracking-wide">Universitas Pasundan</span>
@@ -214,7 +214,7 @@ const EarlyBirdLanding = () => {
             </button>
 
             <a
-              href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi"
+              href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi-detail/281"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:block rounded-full bg-emerald-600 px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow hover:bg-emerald-700 cursor-pointer"
@@ -234,7 +234,7 @@ const EarlyBirdLanding = () => {
               <button onClick={() => { scrollToSection("biaya-promo"); setIsMenuOpen(false); }}>Biaya &amp; Promo</button>
 
               <a
-                href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi"
+                href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi-detail/281"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 rounded-full bg-emerald-600 px-4 py-2 text-sm text-center font-semibold text-white shadow hover:bg-emerald-700"
@@ -285,16 +285,19 @@ const EarlyBirdLanding = () => {
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <a
-                href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi"
+                href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi-detail/281"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-emerald-700 cursor-pointer"
               >
                 Daftar Sekarang (3–20 Desember)
               </a>
-              <button className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+              {/* <button className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
                 Lihat skema biaya &amp; promo →
-              </button>
+              </button> */}
+              <a href="https://pmb.unpas.ac.id/biayaearlybird" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
+                Lihat skema biaya &amp; promo →
+              </a>
             </div>
 
             <p className="text-[11px] text-slate-500">
@@ -316,7 +319,7 @@ const EarlyBirdLanding = () => {
               <div className="rounded-xl overflow-hidden">
                 <div className="aspect-[16/9] w-full">
                   <img
-                    src="/landing_page_pmb/mahasiswa.jpg"
+                    src="/mahasiswa.jpg"
                     alt="Ilustrasi kampus / mahasiswa UNPAS"
                     className="h-full w-full object-cover"
                   />
@@ -414,7 +417,7 @@ const EarlyBirdLanding = () => {
             <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
               <h3 className="text-sm font-semibold text-slate-900">Lingkungan Religius</h3>
               <p className="mt-2 text-sm text-slate-600">
-                Nilai keislaman dan keindonesiaan menjadi fondasi pembentukan karakter mahasiswa UNPAS.
+                Nilai keislaman dan kesundaan menjadi fondasi pembentukan karakter mahasiswa UNPAS.
               </p>
             </div>
             <div className="rounded-2xl bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:scale-[1.03]">
