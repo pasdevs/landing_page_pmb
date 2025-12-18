@@ -284,18 +284,36 @@ const EarlyBirdLanding = () => {
             </ul>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+              {/* KIRI: Grup tombol */}
+              <div className="flex flex-col gap-3">
+                {/* Baris 1 */}
+                <a
+                  href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi-detail/281"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-emerald-700 text-center"
+                >
+                  Daftar Sekarang (3–20 Desember)
+                </a>
+
+                {/* Baris 2 */}
+                <a
+                  href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi-detail/282"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-[#005005] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#003f03] text-center"
+                >
+                  Daftar Early Bird Kedokteran (3–20 Desember)
+                </a>
+              </div>
+
+              {/* KANAN: Link */}
               <a
-                href="https://situ2.unpas.ac.id/spmbfront/jalur-seleksi-detail/281"
+                href="https://pmb.unpas.ac.id/biayaearlybird"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-emerald-700 cursor-pointer"
+                className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer sm:ml-2"
               >
-                Daftar Sekarang (3–20 Desember)
-              </a>
-              {/* <button className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
-                Lihat skema biaya &amp; promo →
-              </button> */}
-              <a href="https://pmb.unpas.ac.id/biayaearlybird" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-emerald-700 underline-offset-2 hover:underline cursor-pointer">
                 Lihat skema biaya &amp; promo →
               </a>
             </div>
